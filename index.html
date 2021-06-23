@@ -4,21 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sherry's Cupcakes</title>
+    <style>
+        *,::before,::after{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        :root{
+            --clr-primary: #eb8adf;
+            --clr-primary-dark: #b84bab;
+            --clr-accent: #f0e660;
+        }
+        ul{
+            list-style:none;
+        }
+        .nav-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--clr-primary);
+            padding: 25px 0;
+        }
+        a{
+            display: block;
+            padding: 0 20px;
+            text-decoration: none;
+            color: white;
+            /* line-height: 20px; */
+            background: var(--clr-primary);
+        }
+        a:hover{
+            background: var(--clr-accent);
+            color: black;
+        }
+        .nav-list a:not(:only-child):after{
+            padding-left: 4px;
+            content: ' ▾';
+        }
+        .nav-list{
+            display: flex;
+            /* justify-content: center; */
+        }
+        li{
+            position: relative;
+        }
+        ul li{
+            min-width: 190px;
+        }
+        ul li a{
+            padding: 15px;
+            line-height: 20px;
+        }
+        .nav-dropdown{
+            position: absolute;
+            z-index: 1;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    Logo
-    Our Cupcakes
-    About
-    Contact
-    Home
-    Our Cupcakes
-    About
-    Contact
-
-    Sherry's Cupcakes
-    The best cupcakes in Calgary
-    Try our new galaxy cupcake
+    <header>
+        <div class="nav-container">
+            <a href="#">Logo</a>
+            <nav>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#!">Home</a></li>
+                    <li>
+                        <a href="#!">Our Cupcakes</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#!">Originals</a></li>
+                            <li><a href="#!">New</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#!">About</a></li>
+                    <li><a href="#!">Contact</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#!">Catering</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+        <div class="hero">
+            Sherry's Cupcakes
+            The best cupcakes in Calgary
+            Try our new galaxy cupcake 
+        </div>     
+    </header>
+    
 
     Freshly baked using local ingredients
     We aspire to give all our customers an authentic taste of Calgary with the help of local farmers. 
@@ -49,6 +128,37 @@
 
     Copyright 2021 Sherry's Cupcakes. All rights reserved.
     
+    <script>
+        const dropdownLists = document.querySelectorAll(".nav-dropdown");
+        const page = document.querySelector("html");
+        document.querySelectorAll("nav ul li > a:not(:only-child)").forEach(item=>{
+            item.addEventListener("click",event=>{
+                let currentDropdown=item.nextElementSibling;
+                dropdownLists.forEach(dropdown=>{
+                    if(dropdown!==currentDropdown){     
+                        dropdown.style.display = "none";
+                    }else{
+                        if(dropdown.style.display==="block"){
+                            dropdown.style.display="none";
+                        }else{
+                            dropdown.style.display = "block";
+                        }
+                        
+                    }
+                })
+                event.stopPropagation();
+            })
+        })
+        
+        page.addEventListener("click", event=>{
+            dropdownLists.forEach(dropdown=>{
+                    if(dropdown.style.display==="block"){
+                        dropdown.style.display = "none";
+                    }
+                    
+                })
+        })
+    </script>
 
 </body>
 </html>
