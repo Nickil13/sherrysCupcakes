@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="nav-container">
-            <a href="#!"class="logo">Sherry's Cupcakes</a>
+    <!-- <div class="nav-container"> -->
+        <header>
             <nav>
+                <a href="#!"class="logo">Sherry's Cupcakes</a>
                 <div class="nav-mobile">
                     <a id="nav-toggle" href="#!"><span></span></a>
                 </div>
@@ -31,45 +31,71 @@
                     </ul></li>
                 </ul>
             </nav>
-        </div>
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <h1>Sherry's Cupcakes</h1>
+                <h2>The best cupcakes in Calgary</h2>
+                <button class="btn">Try our new galaxy cupcake </button>
+            </div>
+        </header>
         
+    <!-- </div>  -->
+    
+     
+    
+    <main>
+        <section class="local">
+            <h2 class="section-title">Freshly baked using local ingredients</h2>
+            <p class="section-info">We aspire to give all our customers an authentic taste of Calgary with the help of local farmers.</p>
+            <ul class="local-icons">
+                <li class="local-icon">Milk icon</li>
+                <li class="local-icon">Egg icon</li>
+                <li class="local-icon">Flour icon</li>
+            </ul>
+        </section>
         
-        <div class="hero">
-            <h1>Sherry's Cupcakes</h1>
-            <h2>The best cupcakes in Calgary</h2>
-            <button>Try our new galaxy cupcake </button>
-        </div>     
-    </header>
+    
+        <section class="box">
+            <h2 class="section-title">Fill a box</h2>
+            <p class="section-info">Stop by and select your favourite cupcakes. Perfect for birthday parties and getogethers!</p>
+            <ul>
+                <li>Half a dozen - $20.00</li>
+                <li>Dozen - $ 35.00</li>
+            </ul>
+            <button>See our flavours</button>
+        </section>
+    
+        
+        <section class="catering">
+            <h2 class="section-title">Need more cupcakes than you can carry?</h2>
+            <p class="section-info">We also do catering.</p>
+            <button>Contact us for more information.</button>
+        </section> 
+    </main>
     
 
-    Freshly baked using local ingredients
-    We aspire to give all our customers an authentic taste of Calgary with the help of local farmers. 
-    Milk icon
-    Egg icon
-    Flour icon
+    <footer>
+        <div class="location">
+            403-123-456
+            Stephen Ave. Downtown Calgary
+            Facebook
+            Instagram
+            Twitter
+        </div>
+        <div class="site-map">
+            Home
+            Our Cupcakes
+            About
+            Contact
+        </div>
+        <div class="copyright">
+            Copyright 2021 Sherry's Cupcakes. All rights reserved.
+        </div>
+    </footer>
+    
 
-    Fill a box
-    Stop by and select your favourite cupcakes. Perfect for birthday parties and getogethers!
-    Half a dozen - $20.00
-    Dozen - $ 35.00
-    See our flavours
+    
 
-    Need more cupcakes than you can carry?
-    We also do catering.
-    Contact us for more information.
-
-    403-123-456
-    Stephen Ave. Downtown Calgary
-    Facebook
-    Instagram
-    Twitter
-
-    Home
-    Our Cupcakes
-    About
-    Contact
-
-    Copyright 2021 Sherry's Cupcakes. All rights reserved.
     
     <script>
         const dropdownLists = document.querySelectorAll(".nav-dropdown");

@@ -13,7 +13,6 @@ ul{
 }
 a{
     display: block;
-    /* padding: 0 20px; */
     text-decoration: none;
     color: white;
 }
@@ -21,15 +20,11 @@ a{
 /*Header*/
 
 /*---Nav Bar*/
-.nav-container{
+nav{
     padding: 20px 0;
     background: var(--clr-primary);
 }
 
-a:hover{
-    background: var(--clr-accent);
-    color: black;
-}
 .nav-list a:not(:only-child):after{
     padding-left: 4px;
     content: ' ▾';
@@ -55,11 +50,8 @@ a:hover{
         transform: scaleY(1);
     }
 }
-li{
-    position: relative;
-}
 
-.nav-container a{
+nav a{
     padding: 1em 1em;
     text-align: center;
     display: flex;
@@ -67,9 +59,16 @@ li{
     align-items: center;
 }
 
+.nav-list a:hover{
+    background: var(--clr-accent);
+    color: black;
+}
+
+
 .nav-dropdown{
     display: none;
     margin-left: 1em;
+    background-color: var(--clr-primary);
 }
 .nav-mobile{
     /* position: absolute;
@@ -84,7 +83,7 @@ li{
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 span, span:before, span:after{
     cursor: pointer;
@@ -124,11 +123,25 @@ span:after{
 .hero{
     padding: 5em;
     text-align: center;
-    background: url(images/galaxy.jpg);
+    background-image: url(images/galaxy.jpg);
+    background-size: cover;
+    color: white;
 }
 
+.btn{
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/*Main*/
+/*---Sections*/
+
+
+
 @media screen and (min-width: 800px){
-    .nav-container{
+    nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
