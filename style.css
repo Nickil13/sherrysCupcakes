@@ -124,42 +124,81 @@ span:after{
     font-weight: 600;
     letter-spacing: 1px;
 }
+
 /* --- Hero*/
 .hero{
-    padding: 5em;
-    text-align: center;
-    background-image: url(images/galaxy.jpg);
+    position: relative;
+    height: 32rem;
+    background: #000;
+    background-position:center;
     background-size: cover;
     color: var(--clr-neutral);
     font-family: var(--ff-primary);
+    border-bottom-left-radius: 2em;
 }
-
+.hero-title{
+    font-size: 60px;
+    /* letter-spacing: 5px; */
+}
+.hero-info{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    padding: 5em;
+}
+.hero-overlay{
+    position:absolute;
+    background-image: url(images/galaxy.jpg);
+    background-position: center;
+    background-size:cover;
+    opacity: 0.65;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+}
 .btn{
     margin-top: 1em;
     padding: 1em;
     border-radius: 1em;
     cursor: pointer;
     font-family: var(--ff-secondary);
+    background-color: var(--clr-primary-dark);
+    text-align: center;
+    max-width: 20ch;
+    transition: background-color 500ms ease-in-out;
 }
+
 .btn:hover{
-    border-color: var(--clr-primary);
+    /* border-color: var(--clr-primary);
     background-color: var(--clr-accent);
+    color: black; */
+    background-color: #8d3783;
 }
 
 /*Main*/
 /*---Sections*/
 section{
-    padding: 5em;
+    padding: 5em 5em;
     font-family: var(--ff-secondary);
 }
 .section-title{
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     /* color: var(--clr-primary-dark); */
 }
 .section-info{
     max-width: 40ch;
     line-height: 1.6em;
-    
+    font-weight: 300;
+}
+.section-content{
+    background-color: var(--clr-neutral);
+    padding: 2em;
+    border-radius: 1em;
 }
 .local-icons{
     display: flex;
@@ -167,6 +206,12 @@ section{
 }
 .box{
     background-color: var(--clr-accent);
+}
+.box .section-title{
+    color: var(--clr-primary-dark);
+}
+.box-prices{
+    margin-top: 1em;
 }
 .catering{
     background: url(images/catering.jpg);
@@ -181,7 +226,7 @@ footer{
     background: linear-gradient(120deg,var(--clr-primary) 10%, var(--clr-primary-dark));
     padding: 2em;
     row-gap: 2em;
-    border-top-left-radius: 2em;
+    /* border-top-left-radius: 2em; */
 
 }
 .location{
