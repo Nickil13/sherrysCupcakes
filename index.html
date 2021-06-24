@@ -5,69 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherry's Cupcakes</title>
-    <style>
-        *,::before,::after{
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-        }
-        :root{
-            --clr-primary: #eb8adf;
-            --clr-primary-dark: #b84bab;
-            --clr-accent: #f0e660;
-        }
-        ul{
-            list-style:none;
-        }
-        .nav-container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--clr-primary);
-            padding: 25px 0;
-        }
-        a{
-            display: block;
-            padding: 0 20px;
-            text-decoration: none;
-            color: white;
-            /* line-height: 20px; */
-            background: var(--clr-primary);
-        }
-        a:hover{
-            background: var(--clr-accent);
-            color: black;
-        }
-        .nav-list a:not(:only-child):after{
-            padding-left: 4px;
-            content: ' ▾';
-        }
-        .nav-list{
-            display: flex;
-            /* justify-content: center; */
-        }
-        li{
-            position: relative;
-        }
-        ul li{
-            min-width: 190px;
-        }
-        ul li a{
-            padding: 15px;
-            line-height: 20px;
-        }
-        .nav-dropdown{
-            position: absolute;
-            z-index: 1;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="nav-container">
-            <a href="#">Logo</a>
+            <a href="#">Sherry's Cupcakes</a>
             <nav>
                 <div class="nav-mobile">
                     <a id="nav-toggle" href="#!"><span></span></a>
@@ -131,6 +74,9 @@
     <script>
         const dropdownLists = document.querySelectorAll(".nav-dropdown");
         const page = document.querySelector("html");
+        const hamburger = document.getElementById("nav-toggle");
+        const navList = document.querySelector(".nav-list");
+
         document.querySelectorAll("nav ul li > a:not(:only-child)").forEach(item=>{
             item.addEventListener("click",event=>{
                 let currentDropdown=item.nextElementSibling;
@@ -154,9 +100,13 @@
             dropdownLists.forEach(dropdown=>{
                     if(dropdown.style.display==="block"){
                         dropdown.style.display = "none";
-                    }
-                    
+                    }     
                 })
+        })
+
+        hamburger.addEventListener("click",event=>{
+            hamburger.classList.toggle("active");
+            navList.classList.toggle("active-nav-list");
         })
     </script>
 
