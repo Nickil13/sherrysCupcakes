@@ -7,6 +7,10 @@
     --clr-primary: #eb8adf;
     --clr-primary-dark: #b84bab;
     --clr-accent: #f0e660;
+    --clr-neutral: white;
+
+    --ff-primary: 'Poiret One', cursive; /*300,400,600*/
+    --ff-secondary: 'Open Sans', sans-serif;
 }
 ul{
     list-style:none;
@@ -14,7 +18,7 @@ ul{
 a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--clr-neutral);
 }
 
 /*Header*/
@@ -23,6 +27,7 @@ a{
 nav{
     padding: 20px 0;
     background: var(--clr-primary);
+    font-family: var(--ff-secondary);
 }
 
 .nav-list a:not(:only-child):after{
@@ -116,7 +121,7 @@ span:after{
 }
 .logo{
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
 }
 /* --- Hero*/
@@ -125,7 +130,8 @@ span:after{
     text-align: center;
     background-image: url(images/galaxy.jpg);
     background-size: cover;
-    color: white;
+    color: var(--clr-neutral);
+    font-family: var(--ff-primary);
 }
 
 .btn{
@@ -133,10 +139,67 @@ span:after{
     padding: 1em;
     border-radius: 1em;
     cursor: pointer;
+    font-family: var(--ff-secondary);
+}
+.btn:hover{
+    border-color: var(--clr-primary);
+    background-color: var(--clr-accent);
 }
 
 /*Main*/
 /*---Sections*/
+section{
+    padding: 5em;
+    font-family: var(--ff-secondary);
+}
+.section-title{
+    margin-bottom: 1em;
+    /* color: var(--clr-primary-dark); */
+}
+.section-info{
+    max-width: 40ch;
+    line-height: 1.6em;
+    
+}
+.local-icons{
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    background-color: var(--clr-accent);
+}
+.catering{
+    background: url(images/catering.jpg);
+}
+
+/*Footer*/
+footer{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--ff-secondary);
+    background: linear-gradient(120deg,var(--clr-primary) 10%, var(--clr-primary-dark));
+    padding: 2em;
+    row-gap: 2em;
+    border-top-left-radius: 2em;
+
+}
+.location{
+    grid-column: 1;
+    grid-row: 1;
+}
+.contact-icons i{
+    font-size: 30px;
+}
+.site-map{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.copyright{
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
 
 
 

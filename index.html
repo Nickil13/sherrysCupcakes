@@ -6,52 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherry's Cupcakes</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d644b2c1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <div class="nav-container"> -->
-        <header>
-            <nav>
-                <a href="#!"class="logo">Sherry's Cupcakes</a>
-                <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"><span></span></a>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="#!">Home</a></li>
-                    <li>
-                        <a href="#!">Our Cupcakes</a>
-                        <ul class="nav-dropdown">
-                            <li><a href="#!">Originals</a></li>
-                            <li><a href="#!">New</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#!">About</a></li>
-                    <li><a href="#!">Contact</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="#!">Catering</a></li>
-                    </ul></li>
-                </ul>
-            </nav>
-            <div class="hero">
-                <div class="hero-overlay"></div>
-                <h1>Sherry's Cupcakes</h1>
-                <h2>The best cupcakes in Calgary</h2>
-                <button class="btn">Try our new galaxy cupcake </button>
+    <header>
+        <nav>
+            <a href="#!"class="logo">Sherry's Cupcakes</a>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
             </div>
-        </header>
+            <ul class="nav-list">
+                <li><a href="#!">Home</a></li>
+                <li>
+                    <a href="#!">Our Cupcakes</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#!">Originals</a></li>
+                        <li><a href="#!">New</a></li>
+                    </ul>
+                </li>
+                <li><a href="#!">About</a></li>
+                <li><a href="#!">Contact</a>
+                <ul class="nav-dropdown">
+                    <li><a href="#!">Catering</a></li>
+                </ul></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <div class="hero-overlay"></div>
+            <h1>Sherry's Cupcakes</h1>
+            <h2>The best cupcakes in Calgary</h2>
+            <button class="btn">Try our new galaxy cupcake </button>
+        </div>
+    </header>
         
-    <!-- </div>  -->
-    
-     
-    
     <main>
         <section class="local">
             <h2 class="section-title">Freshly baked using local ingredients</h2>
             <p class="section-info">We aspire to give all our customers an authentic taste of Calgary with the help of local farmers.</p>
-            <ul class="local-icons">
-                <li class="local-icon">Milk icon</li>
-                <li class="local-icon">Egg icon</li>
-                <li class="local-icon">Flour icon</li>
-            </ul>
+            <!-- <i class="fas fa-egg local-icon"></i>        -->
         </section>
         
     
@@ -76,18 +71,24 @@
 
     <footer>
         <div class="location">
-            403-123-456
-            Stephen Ave. Downtown Calgary
-            Facebook
-            Instagram
-            Twitter
+            <ul>
+                <li class="phone-number">1(403)-123-456</li>
+                <li class="address">Stephen Ave. Downtown Calgary</li>
+            </ul>
+            <div class="contact-icons">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+            
         </div>
-        <div class="site-map">
-            Home
-            Our Cupcakes
-            About
-            Contact
-        </div>
+        
+        <ul class="site-map">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">Our Cupcakes</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
         <div class="copyright">
             Copyright 2021 Sherry's Cupcakes. All rights reserved.
         </div>
@@ -96,45 +97,7 @@
 
     
 
-    
-    <script>
-        const dropdownLists = document.querySelectorAll(".nav-dropdown");
-        const page = document.querySelector("html");
-        const hamburger = document.getElementById("nav-toggle");
-        const navList = document.querySelector(".nav-list");
-
-        document.querySelectorAll("nav ul li > a:not(:only-child)").forEach(item=>{
-            item.addEventListener("click",event=>{
-                let currentDropdown=item.nextElementSibling;
-                dropdownLists.forEach(dropdown=>{
-                    if(dropdown!==currentDropdown){     
-                        dropdown.style.display = "none";
-                    }else{
-                        if(dropdown.style.display==="block"){
-                            dropdown.style.display="none";
-                        }else{
-                            dropdown.style.display = "block";
-                        }
-                        
-                    }
-                })
-                event.stopPropagation();
-            })
-        })
-        
-        page.addEventListener("click", event=>{
-            dropdownLists.forEach(dropdown=>{
-                    if(dropdown.style.display==="block"){
-                        dropdown.style.display = "none";
-                    }     
-                })
-        })
-
-        hamburger.addEventListener("click",event=>{
-            hamburger.classList.toggle("active");
-            navList.classList.toggle("active-nav-list");
-        })
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
