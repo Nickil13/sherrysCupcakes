@@ -20,7 +20,20 @@ a{
     text-decoration: none;
     color: var(--clr-neutral);
 }
-
+body{
+    /* min-height: 100vh;
+    position: relative;
+    background-color: lavender; */
+}
+h3{
+    margin-bottom: 0.5em;
+}
+.contact h3{
+    margin-top: 2em;
+}
+.contact li{
+    margin-left: 1em;
+}
 /*Header*/
 
 /*---Nav Bar*/
@@ -243,6 +256,9 @@ section{
 
 /*Footer*/
 footer{
+    /* position: absolute;
+    bottom:0;
+    width: 100%; */
     display: grid;
     align-items: center;
     justify-items: center;
@@ -251,7 +267,6 @@ footer{
     background-color: var(--clr-primary);
     padding: 2em;
     row-gap: 2em;
-    /* border-top-left-radius: 2em; */
 
 }
 .location{
@@ -276,20 +291,37 @@ footer{
 }
 
 /*Other pages*/
-/* .about-title{
-    font-family: var(--ff-primary);
-    position:relative;
-    margin: 2em;
+.contact-form{
+    display: grid;
+    grid-gap: 1em;
+    max-width: 400px;
+    justify-content:flex-start;
+    padding: 1em;
+    font-family: var(--ff-secondary);
 }
-.about-title::after{
-    position: absolute;
-    content: "";
-    height: 3px;
-    bottom:0;
-    left:0;
-    width:50%;
-    background: var(--clr-primary-dark);
-} */
+
+label{
+    grid-column:1;
+}
+input{
+    grid-column:2;
+}
+textarea{
+    resize:none;
+    padding: 1em;
+}
+input:active, input:focus, textarea:active, textarea:focus{
+    outline-color: var(--clr-primary-dark);
+}
+.contact-btn{
+    border: none;
+    color: var(--clr-neutral);
+}
+#message{
+    grid-column: 2;
+    height: 100px;
+    width: 300px;
+}
 
 @media screen and (min-width: 800px){
     nav{
