@@ -8,6 +8,7 @@
     --clr-primary-dark: #b84bab;
     --clr-accent: #f0e660;
     --clr-neutral: white;
+    --clr-neutral-light: rgba(255, 255, 255, 0.719);
 
     --ff-primary: 'Poiret One', cursive; /*300,400,600*/
     --ff-secondary: 'Open Sans', sans-serif;
@@ -197,6 +198,10 @@ section{
     /* padding: 5em 5em; */
     font-family: var(--ff-secondary);
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .section-title{
     margin-bottom: 1rem;
@@ -206,6 +211,7 @@ section{
     max-width: 40ch;
     line-height: 1.6em;
     font-weight: 300;
+    
 }
 .section-content{
     background-color: var(--clr-neutral);
@@ -217,9 +223,9 @@ section{
     justify-content: space-around;
 }
 .promotion{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     position:relative;
 }
 .tag{
@@ -244,7 +250,7 @@ section{
 }
 
 .box .section-title{
-    color: var(--clr-primary-dark);
+    /* color: var(--clr-primary-dark); */
 }
 .box-prices{
     margin-top: 1em;
@@ -252,6 +258,16 @@ section{
 .catering{
     background: url(images/catering.jpg);
     background-size: cover;
+    color: black;
+}
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-neutral-light);
+    /* border: 4px solid white; */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.151);
+    padding: 2em;
 }
 
 /*Footer*/
