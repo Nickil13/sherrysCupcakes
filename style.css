@@ -372,12 +372,15 @@ input:active, input:focus, textarea:active, textarea:focus{
     justify-content: center;
     padding: 1em;
 }
-#categories-list li{
+.category-btn{
     background-color: var(--clr-accent);
     padding: 0.5em;
     border-radius: 0.5em;
     cursor: pointer;
     margin-left: 1em;
+}
+.active-category{
+    background-color: var(--clr-primary);
 }
 .cupcake-container{
     display:flex;
