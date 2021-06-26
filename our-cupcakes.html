@@ -12,59 +12,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"class="logo">Sherry's Cupcakes</a>
-            <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="our-cupcakes.html">Our Cupcakes</a>
+    <div class="page-container">
+        <header>
+            <nav>
+                <a href="index.html"class="logo">Sherry's Cupcakes</a>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#!">Our Cupcakes</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="our-cupcakes.html">Originals</a></li>
+                            <li><a href="our-cupcakes.html">New</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact-us.html">Contact</a>
                     <ul class="nav-dropdown">
-                        <li><a href="#!">Originals</a></li>
-                        <li><a href="#!">New</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-us.html">Contact</a>
-                <ul class="nav-dropdown">
-                    <li><a href="#!">Catering</a></li>
-                </ul></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="local">
-            <h2 class="section-title">Our Cupcakes</h2>
-            <p class="section-info">Sherry's Cupcakes was established in 2000 by Sherry Zucker. It began as a small cupcake bakery in downtown Calgary.</p>
-        </section>
-    </main>
-    <footer>
-        <div class="location">
-            <ul>
-                <li class="phone-number">1(403)-123-456</li>
-                <li class="address">Stephen Ave. Downtown Calgary</li>
-            </ul>
-            <div class="contact-icons">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter-square"></i>
+                        <li><a href="#!">Catering</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="cupcakes">
+                <h2 class="section-title">Our Cupcakes</h2>
+                <h3>Cake Types</h3>
+                <!-- <p class="section-info">Cake Types</p> -->
+            </section>
+        </main>
+        <footer>
+            <div class="location">
+                <ul>
+                    <li class="phone-number">1(403)-123-456</li>
+                    <li class="address">Stephen Ave. Downtown Calgary</li>
+                </ul>
+                <div class="contact-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
+                
             </div>
             
-        </div>
-        
-        <ul class="site-map">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-        <div class="copyright">
-            Copyright 2021 Sherry's Cupcakes. All rights reserved.
-        </div>
-    </footer>
+            <ul class="site-map">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <div class="copyright">
+                Copyright 2021 Sherry's Cupcakes. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    
     <script src="js/script.js"></script>
 </body>
 </html>

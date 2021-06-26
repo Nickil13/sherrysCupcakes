@@ -12,92 +12,96 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html"class="logo">Sherry's Cupcakes</a>
-            <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-            </div>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="our-cupcakes.html">Our Cupcakes</a>
+    <div class="page-container">
+        <header>
+            <nav>
+                <a href="index.html"class="logo">Sherry's Cupcakes</a>
+                <div class="nav-mobile">
+                    <a id="nav-toggle" href="#!"><span></span></a>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="our-cupcakes.html">Our Cupcakes</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#!">Originals</a></li>
+                            <li><a href="#!">New</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact-us.html">Contact</a>
                     <ul class="nav-dropdown">
-                        <li><a href="#!">Originals</a></li>
-                        <li><a href="#!">New</a></li>
-                    </ul>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact-us.html">Contact</a>
-                <ul class="nav-dropdown">
-                    <li><a href="#!">Catering</a></li>
-                </ul></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact">
-            <h2 class="section-title">Contact Us</h2>
-            <h3>General Contact Info</h3>
-            <p class="section-info"></p>
-
-            <h3>Catering Information</h3>
-            <ul class="section-info">
-                <li>We cater to groups of 50-100 guests</li>
-                <li>We Provide:
-                    <ul>
-                        <li>Cupcake stands, trays & boxes</li>
-                        <li>Custom lettering and icing</li>
-                        <li>*Let us know of any allergies</li>
-                    </ul>
-                </li>
-                <li></li>
-                </li>
-            </ul>
-
-            <h3>Get in touch</h3>
-            <p class="section-info">
-                Special requests or just letting us know what you think about our cupcakes.
-            </p>
-            <form class="contact-form" action="submit">
-                <label for="name">Name:</label>
-                <input id="name" type="text">
+                        <li><a href="#!">Catering</a></li>
+                    </ul></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <h2 class="section-title">Contact Us</h2>
+                <h3>General Contact Info</h3>
+                <p class="section-info">
+                    <strong>Phone number:</strong> 1(403)-123-456
+                </p>
+    
+                <h3>Catering Information</h3>
+                <ul class="section-info">
+                    <li>We cater to groups of 50-100 guests</li>
+                    <li>We Provide:
+                        <ul>
+                            <li>Cupcake stands, trays & boxes</li>
+                            <li>Custom lettering and icing</li>
+                        </ul>
+                    </li>
+                    <li>*Inform us of any existing allergies.</li>
+                    </li>
+                </ul>
+    
+                <h3>Get in touch</h3>
+                <p class="section-info">
+                    Special requests or just letting us know what you think about our cupcakes.
+                </p>
+                <form class="contact-form" action="submit">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text">
+                    
+                    <label for="email">Email: </label>
+                    <input id="email" type="email">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" type="text"></textarea>
+                    
+                    <input class="btn contact-btn" type="button" value="Submit">
+                </form>
+            </section>
+            
+        </main>
+        <footer>
+            <div class="location">
+                <ul>
+                    <li class="phone-number">1(403)-123-456</li>
+                    <li class="address">Stephen Ave. Downtown Calgary</li>
+                </ul>
+                <div class="contact-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                </div>
                 
-                <label for="email">Email: </label>
-                <input id="email" type="email">
-                
-                <label for="message">Message:</label>
-                <textarea id="message" type="text"></textarea>
-                
-                <input class="btn contact-btn" type="button" value="Submit">
-            </form>
-        </section>
-        
-    </main>
-    <footer>
-        <div class="location">
-            <ul>
-                <li class="phone-number">1(403)-123-456</li>
-                <li class="address">Stephen Ave. Downtown Calgary</li>
-            </ul>
-            <div class="contact-icons">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter-square"></i>
             </div>
             
-        </div>
-        
-        <ul class="site-map">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-        </ul>
-        <div class="copyright">
-            Copyright 2021 Sherry's Cupcakes. All rights reserved.
-        </div>
-    </footer>
+            <ul class="site-map">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+            <div class="copyright">
+                Copyright 2021 Sherry's Cupcakes. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
