@@ -226,15 +226,19 @@ section{
 .promotion{
     position:relative;
 }
-.tag{
+.promotion .tag{
     position: absolute;
     top:0;
     left:0;
+    box-shadow: 2px 1px 5px black;
+}
+.tag{
     background-color:var(--clr-primary-dark);
     padding: 1em;
     color: var(--clr-neutral);
     border-radius: 1.5em;
-    box-shadow: 2px 1px 5px black;
+    display:inline-block;
+    
 }
 .promotion-img{
     position:relative;
@@ -318,7 +322,7 @@ footer{
     margin-top: 1em;
     font-family: var(--ff-secondary);
 }
-.contact h3{
+.contact h3, .cupcakes h3{
     margin-top: 2em;
 }
 .contact li{
@@ -354,8 +358,50 @@ input:active, input:focus, textarea:active, textarea:focus{
 
 /*Our Cupcakes Page*/
 .cupcakes{
-    background-color:lavender;
+    /* background-color:lavender; */
     width: 80%;
+}
+#cupcakes-list{
+    margin-top: 2em;
+}
+#cupcakes-list li{
+    margin-bottom: 2em;
+}
+#categories-list{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+#categories-list li{
+    background-color: var(--clr-accent);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    margin-left: 1em;
+}
+.cupcake-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.cupcake-label{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.category-tag{
+    max-width: 120px;
+    text-align: center;
+    border-radius: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.cupcakes img{
+    width: 300px;
+    border-radius: 0.5em;
+}
+.cupcake-description{
+    max-width: 30ch;
 }
 
 @media screen and (min-width: 800px){

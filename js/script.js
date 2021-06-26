@@ -1,3 +1,5 @@
+
+// Dropdown Hamburger Menu
 const dropdownLists = document.querySelectorAll(".nav-dropdown");
         const page = document.querySelector("html");
         const hamburger = document.getElementById("nav-toggle");
