@@ -4,9 +4,6 @@ var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function(){
     if(this.readyState == 4 && this.status == 200){
         loadData(JSON.parse(xhttp.responseText));
-        // populateCupcakes(JSON.parse(xhttp.responseText),"all");
-        // cupcakesData =JSON.parse(xhttp.responseText);
-        // cupcakeList = JSON.parse(xhttp.responseText);
     }
 };
 xhttp.open("GET","js/data.json",true);

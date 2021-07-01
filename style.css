@@ -12,6 +12,33 @@
 
     --ff-primary: 'Poiret One', cursive; /*300,400,600*/
     --ff-secondary: 'Open Sans', sans-serif;
+
+    --fs-h1: 5em;
+    --fs-h2: 2.25em;
+    --fs-h3: 1.75em;
+    --fs-body: 1.25em;
+    --fs-btn: 1em;
+
+    --radius: 1em;
+}
+
+
+h1{
+    font-size: var(--fs-h1);
+    font-family: var(--ff-primary);
+}
+h1,h2,h3{
+    line-height: 1.2em;
+}
+h2,h3,body{
+    font-family: var(--ff-secondary);
+}
+h2{
+    font-size: var(--fs-h2);
+}
+h3{
+    font-size: var(--fs-h3);
+    margin-bottom: 0.5em;
 }
 ul{
     list-style:none;
@@ -20,6 +47,9 @@ a{
     display: block;
     text-decoration: none;
     color: var(--clr-neutral);
+}
+p{
+    line-height: 1.6em;
 }
 main{
     display: flex;
@@ -30,9 +60,6 @@ main{
     max-width: 60rem;
 }
 
-h3{
-    margin-bottom: 0.5em;
-}
 .page-container{
     min-height: 100vh;
     position: relative;
@@ -42,7 +69,7 @@ h3{
 
 /*---Nav Bar*/
 nav{
-    padding: 20px 0;
+    padding: 10px 0;
     background: var(--clr-primary);
     font-family: var(--ff-secondary);
 }
@@ -94,12 +121,6 @@ nav a{
     margin-left: 1em;
     background-color: var(--clr-primary);
 }
-/* .nav-mobile{
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-} */
 
 #nav-toggle{
     position: absolute;
@@ -107,7 +128,6 @@ nav a{
     top: 22px;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
-    /* z-index: 1; */
 }
 span, span:before, span:after{
     cursor: pointer;
@@ -142,6 +162,7 @@ span:after{
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
+    display: inline-block;
 }
 
 /* --- Hero*/
@@ -149,25 +170,21 @@ span:after{
     position: relative;
     height: 32rem;
     background: #000;
-    background-position:center;
-    background-size: cover;
     color: var(--clr-neutral);
     font-family: var(--ff-primary);
-    border-bottom-left-radius: 2em;
 }
-.hero-title{
-    font-size: 60px;
-    /* letter-spacing: 5px; */
+.hero-text{
+    font-size: var(--fs-h3);
 }
 .hero-info{
     position:absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     justify-content: center;
+    width: 100%;
     height: 100%;
-    padding: 5em;
+    padding: 5em 2em;
     text-align: center;
 }
 .hero-overlay{
@@ -182,6 +199,7 @@ span:after{
     top:0;
 }
 .btn{
+    font-size: var(--fs-btn);
     margin-top: 1em;
     padding: 1em;
     border-radius: 1em;
@@ -197,12 +215,32 @@ span:after{
     background-color: #8d3783;
 }
 
+.hero-btn{
+    margin-top: 2em;
+}
+
 /*Main*/
 /*---Sections*/
 section{
     font-family: var(--ff-secondary);
-    padding: 2em;
+    padding: 3em 2em;
+    text-align: center;
 }
+.subsection{
+    margin-bottom: 1em;
+}
+.section-title{
+    font-style: italic;  
+}
+
+.subsection-title{
+    /* background-color: var(--clr-primary);
+    color: var(--clr-neutral);
+    font-weight: 400;
+    padding: 0.5em; */
+    color: var(--clr-primary-dark);
+}
+
 .home-section{
     display: flex;
     flex-direction: column;
@@ -214,9 +252,9 @@ section{
 }
 
 .section-info{
-    max-width: 40ch;
+    /* max-width: 40ch;
     line-height: 1.6em;
-    font-weight: 300; 
+    font-weight: 300;  */
 }
 
 .local-icons{
@@ -225,8 +263,14 @@ section{
 }
 .promotion{
     position:relative;
+    background-color: var(--clr-primary);
+    border-top-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    margin: 1.5em;
+    /* text-align: center; */
 }
-.promotion .tag{
+
+.promotion-tag{
     position: absolute;
     top:0;
     left:0;
@@ -245,12 +289,17 @@ section{
     background: url(images/galaxy.jpg);
     background-size: cover;
     background-position: center;
-    min-width: 300px;
-    min-height: 300px;
+    width: 300px;
+    height: 300px;
     border-radius: 150px;
-    border: 5px solid var(--clr-primary);
+    border: 5px solid var(--clr-primary-dark);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
 }
-
+.box img{
+    width: 100%;
+    border-radius: 1em;
+}
 .box-prices{
     margin-top: 1em;
 }
@@ -258,8 +307,12 @@ section{
     background: url(images/catering.jpg);
     background-size: cover;
     color: black;
+    text-align: center;
+    width: 100%;
 }
 .section-content{
+    /* max-width: 600px;
+    margin: 0 auto; */
     display: flex;
     flex-direction: column;
     align-items: center;
