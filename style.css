@@ -9,6 +9,7 @@
     --clr-accent: #f0e660;
     --clr-neutral: white;
     --clr-neutral-light: rgba(255, 255, 255, 0.719);
+    --clr-neutral-dark: rgb(54, 53, 53);
 
     --ff-primary: 'Poiret One', cursive; /*300,400,600*/
     --ff-secondary: 'Open Sans', sans-serif;
@@ -32,9 +33,11 @@ h1,h2,h3{
 }
 h2,h3,body{
     font-family: var(--ff-secondary);
+    color: var(--clr-neutral-dark);
 }
 h2{
     font-size: var(--fs-h2);
+    text-transform: capitalize;
 }
 h3{
     font-size: var(--fs-h3);
@@ -202,11 +205,11 @@ span:after{
     font-size: var(--fs-btn);
     margin-top: 1em;
     padding: 1em;
-    border-radius: 1em;
+    border-radius: var(--radius);
     cursor: pointer;
     font-family: var(--ff-secondary);
     background-color: var(--clr-primary-dark);
-    text-align: center;
+    /* text-align: center; */
     max-width: 20ch;
     transition: background-color 500ms ease-in-out;
 }
@@ -230,42 +233,30 @@ section{
     margin-bottom: 1em;
 }
 .section-title{
-    font-style: italic;  
+    font-style: italic; 
+    margin-bottom: 1rem; 
 }
 
 .subsection-title{
-    /* background-color: var(--clr-primary);
-    color: var(--clr-neutral);
-    font-weight: 400;
-    padding: 0.5em; */
     color: var(--clr-primary-dark);
 }
 
 .home-section{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-}
-.section-title{
-    margin-bottom: 1rem;
-}
-
-.section-info{
-    /* max-width: 40ch;
-    line-height: 1.6em;
-    font-weight: 300;  */
+    text-align: center; */
+    display: grid;
+    justify-items: center;
+    row-gap: 1em;
 }
 
-.local-icons{
-    display: flex;
-    justify-content: space-around;
-}
+/* Promotion Section */
 .promotion{
     position:relative;
     background-color: var(--clr-primary);
-    border-top-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-top-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
     margin: 1.5em;
     /* text-align: center; */
 }
@@ -280,7 +271,7 @@ section{
     background-color:var(--clr-primary-dark);
     padding: 1em;
     color: var(--clr-neutral);
-    border-radius: 1.5em;
+    border-radius: var(--radius);
     display:inline-block;
     
 }
@@ -294,15 +285,17 @@ section{
     border-radius: 150px;
     border: 5px solid var(--clr-primary-dark);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
-.box img{
+
+/* Fill a Box Section */
+.box .img-container{
     width: 100%;
-    border-radius: 1em;
+    height: 200px;
+    border-radius: var(--radius);
 }
-.box-prices{
-    margin-top: 1em;
-}
+
+/* Catering Section */
 .catering{
     background: url(images/catering.jpg);
     background-size: cover;
@@ -363,6 +356,17 @@ footer{
 }
 
 /*Other pages*/
+
+/*About Page*/
+.about-section img{
+    width: 100%;
+    max-width: 500px;
+    border-radius: var(--radius);
+}
+.about-section p{
+    margin-top: 1em;
+}
+/*Contact Page */
 .contact, .contact .section-title{
     text-align: start;
     align-items:flex-start;

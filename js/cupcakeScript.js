@@ -46,7 +46,7 @@ const populateCupcakes = (cupcakeList,category) =>{
         let item = cupcakeList[i];
         if(category==="all" || category===item.category){
             let cupcake = `<li>
-            <div class="cupcake-container">
+            <div class="cupcake-container" id="${item.flavour}">
                 <h2 class="cupcake-label">${item.flavour}</h2>
                 <div class="tag category-tag">${item.category}</div>
                 <p class="cupcake-price">${`regular: $${item.price.regular.toFixed(2)}, mini: $${item.price.mini.toFixed(2)}`}</p>
