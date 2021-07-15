@@ -23,20 +23,21 @@ const loadData = (data) =>{
 }
 const filterList = (category) =>{
     document.querySelectorAll(".cupcake-card").forEach((card)=>{
-        if(true){
-
+        let cupcakeCat = card.children[1].textContent;
+        if(cupcakeCat === category || category === "all"){
+            card.style.display = "flex";
+        }else{
+            card.style.display = "none";
         }
     })
     
 }
 const addCategories = (data)=>{
-    let allCategories = [...new Set(data.map((item)=>item.category))];
+    let allCategories = ["all",...new Set(data.map((item)=>item.category))];
     allCategories.forEach((category)=>{
         let ele = document.createElement("li");
         ele.setAttribute("class","category-btn");
         ele.addEventListener("click",event=>{
-            // clearList();
-            // populateCupcakes(cupcakesData,category);
             filterList(category);
             
             document.querySelectorAll(".category-btn").forEach((btn)=>{

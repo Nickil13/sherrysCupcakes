@@ -4,7 +4,7 @@
     "flavour": "vanilla",
     "price": {"regular": 3.00, "mini": 2.00},
     "image": "./images/vanilla_cupcakes.jpg",
-    "description": "classic vanilla cupcake with a vanilla bean creme-infused icing"
+    "description": "Classic vanilla cupcake with a vanilla bean creme icing."
 },
 {
     "id": 2,
@@ -12,7 +12,7 @@
     "flavour": "chocolate",
     "price": {"regular": 3.00, "mini": 2.00},
     "image": "./images/cupcakes3.jpg",
-    "description": "classic chocolate cupcake with a mousse topping. dusted with cocoa"
+    "description": "Classic chocolate cupcake with a mousse topping. Dusted with cocoa."
 },
 {
     "id": 3,
@@ -20,7 +20,7 @@
     "flavour": "red velvet",
     "price": {"regular": 3.10, "mini": 2.10},
     "image": "./images/red_velvet.jpg",
-    "description": "deep red cupcake with a cream cheese icing and crumble"
+    "description": "Deep red cupcake with a cream cheese icing and crumble."
 },
 {
     "id": 4,
@@ -28,7 +28,7 @@
     "flavour": "lemon",
     "price": {"regular": 3.30, "mini": 2.20},
     "image": "./images/cupcakes6.jpg",
-    "description": "soft lemon cupcake make with fresh lemon curd and topped with a zest-infused buttercream icing"
+    "description": "Soft lemon cupcake made with fresh lemon curd and topped with a zest-infused buttercream icing."
 },
 {
     "id": 5,
@@ -36,7 +36,7 @@
     "flavour": "easter",
     "price": {"regular": 3.50, "mini": 2.50},
     "image": "./images/easter_cupcakes.jpg",
-    "description": "classic vanilla cupcake with chocolate eggs and a pistachio icing"
+    "description": "Classic vanilla cupcake on a graham cracker base with chocolate eggs and pistachio icing."
 },
 {
     "id": 6,
@@ -44,7 +44,7 @@
     "flavour": "galaxy",
     "price": {"regular": 3.50, "mini": 2.50},
     "image": "./images/galaxy.jpg",
-    "description": "classic chocolate cupcake with a twist, a thin layer of ganache and a beautiful swirled buttercream icing"
+    "description": "Classic chocolate cupcake with a twist, a thin layer of ganache and a beautiful swirled buttercream icing."
 },
 {
     "id": 7,
@@ -52,7 +52,7 @@
     "flavour": "mocha",
     "price": {"regular": 3.30, "mini": 2.20},
     "image": "./images/cupcakes2.jpg",
-    "description": "gluten free chocolate cupcakes with a coffee-infused icing and mini chips."
+    "description": "Gluten free chocolate cupcakes with a coffee-infused icing and mini chips."
 }
 ]
 
