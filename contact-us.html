@@ -33,36 +33,36 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="contact-page">
             <h2 class="page-title">Contact Us</h2>
-            <section class="contact">
-                <!-- <h2 class="section-title">Contact Us</h2> -->
-                <div class="subsection">
-                    <h3 class="subsection-title">General Contact Info</h3>
-                    <div class="section-info">
-                        <p><strong>Phone number:</strong> 1(403)-123-456</p><br/>
-                        <ul><strong>Hours of operation:</strong>
-                            <li>Mon-Fri: 8:00am-5pm</li>
-                            <li>Sat & Sun: 9:00am-4pm</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="subsection">
-                    <h3 class="subsection-title">Catering Information</h3>
-                    <ul class="section-info">
-                        <li>We cater to groups of 50-100 guests</li>
-                        <li>We Provide:
-                            <ul>
-                                <li>Cupcake stands, trays & boxes</li>
-                                <li>Custom lettering and icing</li>
+            <div class="contact-container">
+                <section class="general-contact-section">
+                    <h3 class="section-title">General Contact Info</h3>
+                        <div class="section-info">
+                            <p><strong>Phone number:</strong> 1(403)-123-456</p><br/>
+                            <ul><strong>Hours of operation:</strong>
+                                <li>Mon-Fri: 8:00am-5pm</li>
+                                <li>Sat & Sun: 9:00am-4pm</li>
                             </ul>
-                        </li>
-                        <li>*Inform us of any existing allergies.</li>
-                    </ul>
-                </div>
-    
-                <div class="subsection">
-                    <h3 class="subsection-title">Get in touch</h3>
+                        </div>
+                </section>
+                <section class="catering-info-section">
+                    <h3 class="section-title">Catering Information</h3>
+                        <ul class="section-info">
+                            <li>We cater to groups of 50-100 guests</li>
+                            <li>We Provide:
+                                <ul>
+                                    <li>Cupcake stands, trays & boxes</li>
+                                    <li>Custom lettering and icing</li>
+                                </ul>
+                            </li>
+                            <li>*Inform us of any existing allergies.</li>
+                        </ul>
+                </section>
+            </div>
+            
+            <section class="contact-form-section">
+                <h3 class="section-title">Get In Touch</h3>
                     <p class="section-info">
                         Special requests or just letting us know what you think about our cupcakes.
                     </p>
@@ -73,12 +73,14 @@
                         <label for="email">Email: </label>
                         <input id="email" type="email">
                         
+                        <label for="subject">Subject: </label>
+                        <input id="subject" type="subject" placeholder="Ordering">
+                        
                         <label for="message">Message:</label>
                         <textarea id="message" type="text"></textarea>
                         
                         <input class="btn contact-btn" type="button" value="Submit">
                     </form>
-                </div>
             </section>
             
         </main>

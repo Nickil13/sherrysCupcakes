@@ -17,8 +17,8 @@
     --clr-neutral-light: rgba(255, 255, 255, 0.719);
     --clr-neutral-dark: rgb(54, 53, 53);
 
-    --ff-primary: 'Poiret One', cursive; /*300,400,600*/
-    --ff-secondary: 'Open Sans', sans-serif;
+    --ff-primary: 'Poiret One', cursive; 
+    --ff-secondary: 'Open Sans', sans-serif;/*300,400,600*/
 
     --fs-h1: 5em;
     --fs-h2: 2.25em;
@@ -226,9 +226,16 @@ span:after{
     max-width: 20ch;
     transition: background-color 500ms ease-in-out;
 }
+.light-btn{
+    background-color: transparent;
+    color: var(--clr-secondary);
+    font-weight: 600;
+    border: 2px solid var(--clr-secondary);
+}
 
 .btn:hover{
     background-color: var(--clr-primary-dark);
+    color: var(--clr-neutral);
 }
 
 .hero-btn{
@@ -237,7 +244,7 @@ span:after{
 
 /*Main*/
 /*---Sections*/
-section{
+section, .subsection{
     font-family: var(--ff-secondary);
     padding: 4em 2em;
     text-align: center;
@@ -248,17 +255,17 @@ section{
 .section-title{
     margin-bottom: 1rem; 
 }
-.subsection{
-    margin-bottom: 1em;
-}
 
-.subsection-title{
-    color: var(--clr-secondary);
+/* Intro Section */
+.box-prices{
+    text-align: left;
 }
-
+.box-prices li{
+    padding: 0.5em;
+}
 /* Promotion Section */
 .promotion-section{
-    background-color: var(--clr-primary);
+    /* background-color: var(--clr-primary); */
     /* border-top-left-radius: var(--radius);
     border-bottom-right-radius: var(--radius);   */
 }
@@ -290,15 +297,6 @@ section{
     margin-top: 2em;
 }
 
-/* Fill a Box Section */
-.box-section .img-container{
-    width: 100%;
-    height: 200px;
-    border-radius: var(--radius);
-}
-.box-prices{
-    text-align: left;
-}
 
 /* Catering Section */
 .catering-section{
@@ -345,12 +343,13 @@ footer a{
 .location-info{
     grid-column: 2;
     grid-row: 1;
+
 }
 .contact-icons i{
     font-size: 30px;
     cursor: pointer;
 }
-.contact-icons i:hover, .footer a:hover{
+.contact-icons i:hover, footer a:hover{
     color: var(--clr-secondary);
 }
 .site-map{
@@ -361,6 +360,7 @@ footer a{
 .copyright-info{
     grid-column: 1 / span 2;
     grid-row: 2;
+    text-align: center;
 }
 
 /*Other pages*/
@@ -402,9 +402,23 @@ footer a{
     }
 }
 /*Contact Page */
-.contact, .contact .section-title{
-    text-align: start;
-    align-items:flex-start;
+#contact-page .section-title{
+    color: var(--clr-secondary);
+    font-family: var(--ff-primary);
+}
+.contact-container{
+    width: 80%;
+}
+
+.contact-container section{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 800px){
+    .contact-container{
+        display: flex;
+    }
 }
 .contact-form{
     display: grid;

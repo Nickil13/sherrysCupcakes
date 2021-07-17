@@ -1,5 +1,5 @@
 # Sherry's Cupcakes
-A landing page for a fictional cupcake shop.
+A mobile-first landing page for a fictional cupcake shop.
 
 ## Technologies Used
 HTML
