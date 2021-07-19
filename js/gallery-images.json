@@ -1,0 +1,32 @@
+[{
+    "id":1,
+    "image":"./images/slider1.jpg",
+    "alt": "cupcake with love lettering"
+},
+{
+    "id":2,
+    "image":"./images/slider2.jpg",
+    "alt": "vanilla cupcakes with sprinkles"
+},
+{
+    "id":3,
+    "image":"./images/slider3.jpg",
+    "alt": "happy birthday cupcake"
+},
+{
+    "id":4,
+    "image":"./images/slider4.jpg",
+    "alt": "chocolate cupcake with a strawberry"
+},
+{
+    "id":5,
+    "image":"./images/slider5.jpg",
+    "alt": "mini red velvet cupcakes"
+},
+{
+    "id":6,
+    "image":"./images/slider6.jpg",
+    "alt": "cupcakes with different styled icing"
+}
+
+]

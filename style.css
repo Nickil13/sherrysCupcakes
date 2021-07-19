@@ -7,6 +7,7 @@
     --clr-primary: #eb8adf;
     --clr-secondary: #b84bab;
     --clr-primary-dark: #8d3783;
+    --clr-primary-light: pink;
     --clr-accent: #f0e660;
     --clr-base: lavender;
     --clr-neutral: white;
@@ -213,7 +214,7 @@ span:after{
 }
 .btn{
     font-size: var(--fs-btn);
-    margin-top: 1em;
+    margin: 2em auto;
     padding: 1em;
     border-radius: var(--radius);
     cursor: pointer;
@@ -311,9 +312,7 @@ section, .subsection{
     border: 5px solid var(--clr-secondary);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
-.promotion-section .btn{
-    margin: 2em auto;
-}
+
 .promotion-section .section-content{
     /* max-width: 50ch; */
     padding: 1em;
@@ -340,13 +339,39 @@ section, .subsection{
         grid-row: 1;
         padding: 1em;
     }
-    .ordering-subsection .btn{
+    /* .ordering-subsection .btn{
         margin: 1em auto;
-    }
+    } */
 }
 
 
+/*Gallery section */
+.gallery-section{
+    position: relative;
+    padding: 1em;
+    background-color: var(--clr-primary-light);
+    width:100%;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    row-gap: 1em;
+    column-gap: 1em;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+}
 
+.gallery-image{
+    min-width: 200px;
+    min-height: 200px;
+}
+@media screen and (min-width: 800px){
+    .slider-container{
+        max-width: 850px;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 /*Footer*/
 footer{
     position: absolute;
@@ -355,8 +380,6 @@ footer{
     display: grid;
     place-items: center;
     grid-template-columns: 50%;
-    /* align-items: center;
-    justify-items: flex-start; */
     font-family: var(--ff-secondary);
     background-color: var(--clr-primary);
     padding: 2em;
@@ -392,8 +415,6 @@ footer a{
 
 /*Other pages*/
 .page-title{
-    /* font-style: italic; */
-    /* color: var(--clr-secondary); */
     margin: 2em 0;
 }
 /*About Page*/
@@ -492,8 +513,6 @@ input:active, input:focus, textarea:active, textarea:focus{
 /*Our Cupcakes Page*/
 #cupcakes-page{
     padding: 1em;
-    /* background-color:lavender; */
-    /* width: 80%; */
 }
 #cupcakes-page>p, .about-info>p{
     max-width: 60ch;
@@ -518,6 +537,7 @@ input:active, input:focus, textarea:active, textarea:focus{
     border-radius: 0.5em;
     cursor: pointer;
     margin-left: 1em;
+    text-align: center;
 }
 .category-btn:hover, .active-category{
     background-color: var(--clr-primary);
