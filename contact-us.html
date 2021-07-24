@@ -21,71 +21,83 @@
                 </div>
                 <ul class="nav-list">
                     <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="our-cupcakes.html">Our Cupcakes</a>
-                        <ul class="nav-dropdown">
-                            <li><a href="#!">Originals</a></li>
-                            <li><a href="#!">New</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="contact-us.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="banner" style="background-image: url(images/cupcakeShop.jpg);
+            background-size: cover; background-position: center;">
+                <h2 class="banner-title">Contact Us</h2>
+            </div>
         </header>
         <main id="contact-page">
-            <h2 class="page-title">Contact Us</h2>
-            <div class="contact-container">
-                <section class="general-contact-section">
-                    <h3 class="section-title">General Contact Info</h3>
-                        <div class="section-info">
-                            <p><strong>Phone number:</strong> 1(403)-123-456</p><br/>
-                            <ul><strong>Hours of operation:</strong>
-                                <li>Mon-Fri: 8:00am-5pm</li>
-                                <li>Sat & Sun: 9:00am-4pm</li>
-                            </ul>
-                        </div>
-                </section>
-                <section class="catering-info-section">
-                    <h3 class="section-title">Catering Information</h3>
-                        <ul class="section-info">
-                            <li>We cater to groups of 50-100 guests</li>
-                            <li>We Provide:
-                                <ul>
-                                    <li>Cupcake stands, trays & boxes</li>
-                                    <li>Custom lettering and icing</li>
-                                </ul>
-                            </li>
-                            <li>*Inform us of any existing allergies.</li>
+            <section>
+                <h3>Store Information</h3>
+                <ul class="store-info">
+                    <li><strong>Phone number:</strong> 1(403)-123-456</li>
+                    <li><strong>Address: </strong>Stephen Ave. Downtown Calgary</li>
+                    <ul><strong>Hours of operation:</strong>
+                        <li>Mon-Fri: 8:00am-5pm</li>
+                        <li>Sat & Sun: 9:00am-4pm</li>
+                    </ul>
+                </ul>
+            </section>
+            
+            
+            <section>
+                <h3 class="section-title">Catering</h3>
+                <ul class="section-info">
+                    <li>We cater to groups of 50-100 guests</li>
+                    <li>We Provide:
+                        <ul>
+                            <li>Cupcake stands, trays & boxes</li>
+                            <li>Custom lettering and icing</li>
                         </ul>
-                </section>
-            </div>
+                    </li>
+                    <li>*Inform us of any existing allergies.</li>
+                </ul>
+            </section>
             
             <section class="contact-form-section">
-                <h3 class="section-title">Get In Touch</h3>
-                    <p class="section-info">
-                        Special requests or just letting us know what you think about our cupcakes.
-                    </p>
+                <h3 class="contact-title">Get In Touch</h3>
+                <p class="section-info">
+                    Special requests, questions or letting us know what you think about our cupcakes.
+                </p>
+                <div class="form-container">
                     <form class="contact-form" action="submit">
-                        <label for="name">Name:</label>
-                        <input id="name" type="text">
+                        <div class="input-container">
+                            <label for="name">Name:</label>
+                            <input id="name" name="name" type="text"
+                            placeholder="Your name">
+                        </div>
                         
-                        <label for="email">Email: </label>
-                        <input id="email" type="email">
+                        <div class="input-container">
+                            <label for="email">Email: </label>
+                            <input id="email" name="email" type="email"
+                            placeholder="you@email.com">
+                        </div>
                         
-                        <label for="subject">Subject: </label>
-                        <input id="subject" type="subject" placeholder="Ordering">
+                        <div class="input-container">
+                            <label for="subject">Subject: </label>
+                            <input id="subject" name="subject" type="subject" placeholder="e.g. cupcake order">
+                        </div>
                         
-                        <label for="message">Message:</label>
-                        <textarea id="message" type="text"></textarea>
+                        <div class="input-container">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" type="text" placeholder="I'd like to make an order..."></textarea>
+                        </div>
                         
                         <input class="btn contact-btn" type="button" value="Submit">
                     </form>
+                </div>
+                
             </section>
             
         </main>
         <footer>
             <div class="location-info">
+                <h4 class="footer-title">Get in Touch</h4>
                 <ul>
                     <li class="phone-number">1(403)-123-456</li>
                     <li class="address">Stephen Ave. Downtown Calgary</li>
@@ -97,7 +109,13 @@
                 </div>
                 
             </div>
-            
+            <div class="hours-info">
+                <h4 class="footer-title">Hours</h4>
+                <ul>
+                    <li>Mon-Fri: 8:00am-5pm</li>
+                    <li>Sat & Sun: 9:00am-4pm</li>
+                </ul>
+            </div>
             <ul class="site-map">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
