@@ -522,21 +522,30 @@ footer a{
     margin-bottom: 1em;
 }
 .catering-info-section{
-    grid-template-rows: 50%;
+    grid-template-rows: 1fr 1fr;
 }
 
 .catering-info-section img{
+    grid-column: 1;
+    grid-row: 1;
     width: 100%;
     max-width: 600px;
     border-radius: var(--radius);
+    
 }
 .catering-info-section .section-content{
+    grid-column: 1;
+    grid-row: 2;
     padding: 2em;
-    justify-self: center;
 }
 @media screen and (min-width: 800px){
+    .catering-info-section{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
     .catering-info-section .section-content{
-        padding: 1em;
+        grid-column: 2;
+        grid-row:1;
     }
 }
 .form-container{
@@ -548,12 +557,7 @@ footer a{
     border-radius: 2em;
     padding: 2em;
 }
-.contact-title{
-    color: var(--clr-secondary);
-    font-size: 35px;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-}
+
 .contact-form{
     padding: 1em;
     width: 100%;
