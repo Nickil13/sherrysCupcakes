@@ -514,17 +514,8 @@ footer a{
     }   
 }
 /*Contact Page */
-/* .store-info{
-    text-align: left;
-}
-
-.store-info>li, .store-info>ul{
-    margin-bottom: 1em;
-    font-size: var(--fs-body);
-} */
 .contact-title{
     font-size: 20px;
-    /* color: var(--clr-primary); */
     grid-column: 2;
     grid-row: 1;
     margin-bottom: 0.5em;
