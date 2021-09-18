@@ -653,7 +653,7 @@ input:active, input:focus, textarea:active, textarea:focus{
 #categories-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     justify-content: center;
     padding: 2em;
 }
@@ -663,7 +663,6 @@ input:active, input:focus, textarea:active, textarea:focus{
     width: 100px;
     border-radius: 0.5em;
     cursor: pointer;
-    margin-left: 1em;
     text-align: center;
 }
 .category-btn:hover, .active-category{
