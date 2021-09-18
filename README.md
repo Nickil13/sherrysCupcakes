@@ -1,5 +1,8 @@
 # Sherry's Cupcakes
-A mobile-first landing page for a fictional cupcake shop.
+A mobile-first website for a fictional cupcake shop. It features four pages: home, cupcakes, about, and contact.
+
+## Live site
+
 
 ## Technologies Used
 HTML

@@ -14,18 +14,20 @@
 <body>
     <div class="page-container">
         <header>
-            <nav>
-                <div class="nav-mobile">
-                    <a href="index.html"class="logo">Sherry's Cupcakes</a>
-                    <a id="nav-toggle" href="#!"><span class="nav-span"></span></a>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <nav>
+                    <div class="nav-mobile">
+                        <a href="index.html"class="logo">Sherry's Cupcakes</a>
+                        <a id="nav-toggle" href="#!"><span class="nav-span"></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="hero">
                 <div class="hero-overlay"></div>
                 <div class="hero-info">
@@ -44,8 +46,12 @@
                     <p class="section-info">
                         There's nothing like a delicious cupcake to brighten up someone's day! From birthday parties, to office meetings or as a personal treat, we've got you covered.
                     </p>
+                    <!-- <ul>
+                        <li>Choose from 10 delicious flavours</li>
+                        <li></li>
+                    </ul> -->
                 </div>
-                <div class="subsection">
+                <!-- <div class="subsection">
                     <h3>Purchase a single cupcake or fill a box.</h3>
                     <p>Mix and match cupcakes for the perfect combination of flavours!</p>
                     <ul class="box-prices">
@@ -56,7 +62,7 @@
                     </ul>
                     <p>Flavours:<br> vanilla | chocolate | red velvet | lemon | easter | galaxy | mocha</p>
                     <a href="our-cupcakes.html" class="btn ">See our list of cupcakes</a>
-                </div>
+                </div> -->
                 
             </section>
             
@@ -75,18 +81,19 @@
             <!-- Ordering Section -->
             <section class="ordering-section">
                 <h2 class="section-title">Ordering Cupcakes</h2>
-                <p class="section-info">Pick out your cupcakes ahead of time and we will prepare you a box! Place an order via our phone number or contact form on the contact page.</p>
-                <div class="subsection ordering-subsection">
-                    <div class="img-container">
-                        <img class="catering-img" src="images/catering3.jpg" alt="cupcake tiers">
+                <p class="section-info">Pick out your cupcakes ahead of time and we will prepare you a box!<br/>Orders can be picked up at the store or delivered locally.</p>
+                <a class="btn-primary" href="contact-us.html">Place an order</a>
+            </section>
+            <!-- Catering Section -->
+            <section class="catering-section">
+                    <img class="catering-img" src="images/catering3.jpg" alt="cupcake tiers">
+                <div class="section-content">
+                    <h2 class="section-title">Catering</h2>
+                    <div class="section-info">
+                        <p>Need more cupcakes than you can carry?<br/><br/>
+                    We do assorted trays as well as tiered wedding cakes. Let us know in advance about any specifications so we can ensure you get the best cupcakes for you!</p>
                     </div>
-                    <div class="subsection-info">
-                        <h3>Catering</h3>
-                        <p>Need more cupcakes than you can carry?</p><br>
-                        <p>We do assorted trays as well as tiered wedding cakes. Let us know in advance about any specifications so we can ensure you get the best cupcakes for you!</p>
-                        <a href="contact-us.html" class="btn">Contact us</a>
-                    </div>
-                    
+                    <a class="btn-primary" href="contact-us.html">More info</a>
                 </div>
             </section>
         </main>
@@ -110,11 +117,11 @@
                 </div>
                 
             </div>
-            <div class="hours-info">
+            <div class="footer-hours">
                 <h4 class="footer-title">Hours</h4>
                 <ul>
-                    <li>Mon-Fri: 8:00am-5pm</li>
-                    <li>Sat & Sun: 9:00am-4pm</li>
+                    <li class="hours-item"><span class="days-label">Mon-Fri:</span> <span>8:00am-5pm</span></li>
+                    <li class="hours-item"><span class="days-label">Sat & Sun:</span> <span>9:00am-4pm</span></li>
                 </ul>
             </div>
             <ul class="site-map">
@@ -124,7 +131,7 @@
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
             <div class="copyright-info">
-                &copy; 2021 Sherry's Cupcakes. All rights reserved.
+                &copy; 2021 Sherry's Cupcakes
             </div>
         </footer>
     </div>

@@ -14,18 +14,20 @@
 <body>
     <div class="page-container">
         <header>
-            <nav>
-                <div class="nav-mobile">
-                    <a href="index.html"class="logo">Sherry's Cupcakes</a>
-                    <a id="nav-toggle" href="#!"><span class="nav-span"></span></a>
-                </div>
-                <ul class="nav-list">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact-us.html">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="nav-container">
+                <nav>
+                    <div class="nav-mobile">
+                        <a href="index.html"class="logo">Sherry's Cupcakes</a>
+                        <a id="nav-toggle" href="#!"><span class="nav-span"></span></a>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-cupcakes.html">Our Cupcakes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="banner" style="background-image: url(images/cupcakeShop.jpg);
             background-size: cover; background-position: center;">
                 <h2 class="banner-title">Contact Us</h2>
@@ -34,64 +36,36 @@
         <main id="contact-page">
             <section class="contact-section">
                 <h3 class="section-title">Store Information</h3>
-                <div class="contact-items">
-                    <div class="contact-item">
-                      <i class="fa fa-phone contact-icon"></i>
-                      <div class="item-text">
-                        <h3 class="contact-title">Phone number</h3>
-                        <p class="contact-text">1(403)-123-456</p>
-                      </div>
-                    </div>
-                  
-                    <div class="contact-item">
-                      <i class="fa fa-map-marker contact-icon"></i>
-                      <div class="item-text">
-                        <h3 class="contact-title">Address</h3>
-                        <p class="contact-text"> 122 7th Avenue SW<br>Calgary, Alberta</p>
-                      </div>
-                    </div>
-                  
-                    <!-- <div class="contact-item">
-                      <i class="fa fa-envelope contact-icon"></i>
-                      <div class="item-text">
-                        <h3 class="contact-title">Email</h3>
-                        <p class="contact-text">yourEmail@email.com</p>
-                      </div>
-                    </div> -->
-               </div>
-                
-                <div class="hours-container">
-                  <h3 class="hours-title">Hours of Operation</h3>
-                  <ul class="hours-info">
-                    <li><span>Mon-Fri:</span> 8:00am-5pm</li>
-                    <li><span>Sat & Sun:</span> 9:00am-4pm</li>
-                  </ul>
-                </div>
-                <!-- <ul class="store-info">
-                    <li><i class="fas fa-phone contact-icon"></i><strong>Phone number:</strong> 1(403)-123-456</li>
-                    <li><i class="fas fa-map-marker-alt contact-icon"></i><strong>Address: </strong>Stephen Ave. Downtown Calgary</li>
-                    <ul><strong>Hours of operation:</strong>
-                        <li>Mon-Fri: 8:00am-5pm</li>
-                        <li>Sat & Sun: 9:00am-4pm</li>
-                    </ul>
-                </ul> -->
+                <ul class="contact-info">
+                    <li>
+                        <span><i class="fa fa-phone contact-icon"></i> Phone number</span>
+                        <p>(403)-123-456</p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-map-marker contact-icon"></i> Address</span>
+                        <p>122 7th Avenue SW<br>Calgary, Alberta</p>
+                    </li>
+                </ul>
             </section>
+            <div class="hours-container">
+                <h3 class="hours-title">Hours of Operation</h3>
+                <ul class="hours-info">
+                  <li><span>Mon-Fri:</span> 8:00am-5pm</li>
+                  <li><span>Sat & Sun:</span> 9:00am-4pm</li>
+                </ul>
+            </div>
             
             
             <section class="catering-info-section">
-                <img src="images/catering2.jpeg" alt="white cupcakes">
-                <div class="section-content">
-                    <h3 class="section-title">Catering</h3>
-                    <ul class="section-info store-info">
-                        <li>We cater to groups of 50-100 guests</li>
-                        <ul><u>We Provide:</u>
-                            <li>Cupcake stands, trays & boxes</li>
-                            <li>Custom lettering and icing</li>
-                        </ul>
-                        <li>*Inform us of any existing allergies.</li>
-                    </ul>
-                </div>
-                
+                <h3 class="section-title">Catering</h3>
+                <ul class="section-info store-info">
+                    <li>We cater to groups of 50-100 guests</li>
+                    <li><ul><br/><u>We Provide:</u>
+                        <li>Cupcake stands, trays & boxes</li>
+                        <li>Custom lettering and icing</li>
+                    </ul></li>
+                    <li><br/>*Please inform us of any existing allergies</li>
+                </ul>
             </section>
             
             <section class="contact-form-section">
@@ -100,30 +74,31 @@
                     Special requests, questions or letting us know what you think about our cupcakes.
                 </p>
                 <div class="form-container">
-                    <form class="contact-form" action="submit">
-                        <div class="input-container">
+                    <form id="contact-form" class="contact-form" action="https://formspree.io/f/mqkwnbdw" method="POST">
+                        <div class="form-control">
                             <label for="name">Name:</label>
                             <input id="name" name="name" type="text"
-                            placeholder="Your name">
+                            placeholder="Your name" required>
                         </div>
                         
-                        <div class="input-container">
+                        <div class="form-control">
                             <label for="email">Email: </label>
                             <input id="email" name="email" type="email"
-                            placeholder="you@email.com">
+                            placeholder="you@email.com" required>
                         </div>
                         
-                        <div class="input-container">
+                        <div class="form-control">
                             <label for="subject">Subject: </label>
-                            <input id="subject" name="subject" type="subject" placeholder="e.g. cupcake order">
+                            <input id="subject" name="subject" type="subject" placeholder="e.g. cupcake order" required>
                         </div>
                         
-                        <div class="input-container">
+                        <div class="form-control">
                             <label for="message">Message:</label>
-                            <textarea id="message" name="message" type="text" placeholder="I'd like to make an order..."></textarea>
+                            <textarea id="message" name="message" type="text" rows="5" placeholder="I'd like to make an order..." required></textarea>
                         </div>
                         
-                        <input class="btn contact-btn" type="button" value="Submit">
+                        <button class="btn-primary" type="submit">Submit</button>
+                        <p id="form-status"></p>
                     </form>
                 </div>
                 
@@ -144,11 +119,11 @@
                 </div>
                 
             </div>
-            <div class="hours-info">
+            <div class="footer-hours">
                 <h4 class="footer-title">Hours</h4>
                 <ul>
-                    <li>Mon-Fri: 8:00am-5pm</li>
-                    <li>Sat & Sun: 9:00am-4pm</li>
+                    <li class="hours-item"><span class="days-label">Mon-Fri:</span> <span>8:00am-5pm</span></li>
+                    <li class="hours-item"><span class="days-label">Sat & Sun:</span> <span>9:00am-4pm</span></li>
                 </ul>
             </div>
             <ul class="site-map">
@@ -158,11 +133,12 @@
                 <li><a href="contact-us.html">Contact</a></li>
             </ul>
             <div class="copyright-info">
-                &copy; 2021 Sherry's Cupcakes. All rights reserved.
+                &copy; 2021 Sherry's Cupcakes
             </div>
         </footer>
     </div>
     
     <script src="js/script.js"></script>
+    <script src="js/formScript.js"></script>
 </body>
 </html>
