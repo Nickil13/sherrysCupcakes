@@ -2,7 +2,7 @@
 A mobile-first website for a fictional cupcake shop. It features four pages: home, cupcakes, about, and contact.
 
 ## Live site
-- Live Site URL: [GitHub Pages](https://nickil13.github.io/FEM-3cards/)
+- Live Site URL: [GitHub Pages](https://nickil13.github.io/sherrysCupcakes/)
 
 ## Technologies Used
 - HTML
