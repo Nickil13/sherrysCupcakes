@@ -664,6 +664,7 @@ input:active, input:focus, textarea:active, textarea:focus{
     border-radius: 0.5em;
     cursor: pointer;
     margin-left: 1em;
+    margin-bottom: 1em;
     text-align: center;
 }
 .category-btn:hover, .active-category{
