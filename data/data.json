@@ -11,7 +11,7 @@
     "category": "classic",
     "flavour": "chocolate",
     "price": {"regular": 3.00, "mini": 2.00},
-    "image": "./images/cupcakes3.jpg",
+    "image": "./images/cupcakes-chocolate.jpg",
     "description": "Classic chocolate cupcake with a mousse topping. Dusted with cocoa."
 },
 {
@@ -27,7 +27,7 @@
     "category": "classic",
     "flavour": "lemon",
     "price": {"regular": 3.30, "mini": 2.20},
-    "image": "./images/cupcakes6.jpg",
+    "image": "./images/cupcakes-lemon.jpg",
     "description": "Soft lemon cupcake made with fresh lemon curd and topped with a zest-infused buttercream icing."
 },
 {
@@ -44,15 +44,48 @@
     "flavour": "galaxy",
     "price": {"regular": 3.50, "mini": 2.50},
     "image": "./images/galaxy.jpg",
-    "description": "Classic chocolate cupcake with a twist, a thin layer of ganache and a beautiful swirled buttercream icing."
+    "description": "Rich dark chocolate cake infused with Earl Gray, topped with a galactic buttercream and shining sprinkles."
 },
 {
     "id": 7,
     "category": "gluten free",
     "flavour": "mocha",
     "price": {"regular": 3.30, "mini": 2.20},
-    "image": "./images/cupcakes2.jpg",
+    "image": "./images/cupcakes-mocha.jpg",
     "description": "Gluten free chocolate cupcakes with a coffee-infused icing and mini chips."
+},
+{
+    "id": 8,
+    "category": "gluten free",
+    "flavour": "golden vanilla",
+    "price": {"regular": 3.30, "mini": 2.20},
+    "image": "./images/cupcakes-golden-vanilla.jfif",
+    "description": "Crispy golden cupcakes with a creamy vanilla icing. Did we mention they are gluten-free?"
+},
+{
+    "id": 9,
+    "category": "seasonal",
+    "flavour": "toffee",
+    "price": {"regular": 3.35, "mini": 2.30},
+    "image": "./images/cupcakes-toffee.jfif",
+    "description": "Vanilla cupcake with toffee drizzle and icing. Topped with a refreshing cinnamon wafer."
+},
+{
+    "id": 10,
+    "category": "classic",
+    "flavour": "oreo",
+    "price": {"regular": 3.30, "mini": 2.20},
+    "image": "./images/cupcakes-oreo.jfif",
+    "description": "Vanilla cupcake with flecks of oreo cookie in the batter. Tasty buttercream icing and an oreo, the perfect cookies and cream flavour."
+},
+{
+    "id": 11,
+    "category": "gluten free",
+    "flavour": "black forest",
+    "price": {"regular": 3.30, "mini": 2.20},
+    "image": "./images/cupcakes-golden-vanilla.jfif",
+    "description": "Gluten-free chocolate cupcake with a glazed vanilla bean icing and a cherry."
 }
+
 ]
 
