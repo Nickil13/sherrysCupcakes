@@ -653,7 +653,7 @@ input:active, input:focus, textarea:active, textarea:focus{
 #categories-list{
     display: flex;
     flex-wrap: wrap;
-    row-gap: 5px;
+    gap: 5px;
     justify-content: center;
     padding: 2em;
 }
