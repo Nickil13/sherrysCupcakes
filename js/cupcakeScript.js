@@ -7,7 +7,7 @@ xhttp.onreadystatechange = function(){
         loadData(JSON.parse(xhttp.responseText));
     }
 };
-xhttp.open("GET","js/data.json",true);
+xhttp.open("GET","data/data.json",true);
 xhttp.send();
 
 const clearList = () =>{

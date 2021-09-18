@@ -7,7 +7,7 @@ const galleryContainer = document.querySelector(".gallery-container");
                 loadSlider(JSON.parse(xhttp.responseText));
             }
         };
-        xhttp.open("GET","js/gallery-images.json",true);
+        xhttp.open("GET","data/gallery-images.json",true);
         xhttp.send();
         
         const loadSlider = (data) =>{
