@@ -83,7 +83,7 @@
     "category": "gluten free",
     "flavour": "black forest",
     "price": {"regular": 3.30, "mini": 2.20},
-    "image": "./images/cupcakes-golden-vanilla.jfif",
+    "image": "./images/cupcakes-black-forest.jfif",
     "description": "Gluten-free chocolate cupcake with a glazed vanilla bean icing and a cherry."
 }
 
