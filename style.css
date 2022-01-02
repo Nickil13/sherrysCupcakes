@@ -6,6 +6,7 @@
 :root{
     --clr-primary: #eb8adf;
     --clr-secondary: #b84bab;
+    --clr-secondary-light: #cc6ac1;
     --clr-primary-dark: #8d3783;
     --clr-primary-light: pink;
     --clr-accent: #f0e660;
@@ -245,16 +246,11 @@ main{
     background-color: var(--clr-secondary);
     max-width: 20ch;
     transition: background-color 500ms ease-in-out;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205);
 }
 .btn-primary{
-    font-size: var(--fs-btn);
-    font-family: var(--ff-secondary);
-    padding: 1em;
-    border-radius: var(--radius);
-    background-color: var(--clr-secondary);
     border: none;
     cursor: pointer;
-    max-width: 20ch;
     margin: 0 auto;
     color: var(--clr-neutral);
 }
@@ -263,6 +259,7 @@ main{
     color: var(--clr-secondary);
     font-weight: 600;
     border: 2px solid var(--clr-secondary);
+    box-shadow: none;
 }
 
 .btn:hover, .btn-primary:hover{
@@ -272,6 +269,7 @@ main{
 
 .hero-btn{
     margin-top: 2em;
+    max-width: none;
 }
 
 /*Main*/
@@ -378,7 +376,7 @@ section, .subsection{
 @media screen and (min-width: 800px){
     .catering-section{
         grid-template-columns: 1fr 1fr;
-        padding: 2em 0;
+        padding: 2em 0 6em 0;
     }
 }
 
@@ -557,6 +555,23 @@ footer a{
 .contact-info li{
     padding: 1rem;
 }
+
+.contact-icon{
+    font-size: 20px;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: var(--clr-primary-light);
+    justify-self: center;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    color: var(--clr-neutral);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 1rem;
+ }
+
 @media screen and (min-width: 600px){
     .contact-info{
         width: 400px;
@@ -567,23 +582,12 @@ footer a{
         align-items:center;
         justify-content: center;
         text-align:start;
-        padding: 1rem;
+    }
+    .contact-icon{
+        margin-bottom: 0;
     }
 }
-.contact-icon{
-    font-size: 20px;
-    grid-column: 1;
-    grid-row: 1;
-    background-color: var(--clr-primary-light);
-    align-self: center;
-    justify-self: center;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    color: var(--clr-neutral);
-    border-radius: 20px;
-    text-align: center;
- }
+
  
 
   .hours-info span{
