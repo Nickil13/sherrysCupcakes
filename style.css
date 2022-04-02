@@ -21,9 +21,12 @@
     --ff-secondary: "Open Sans", sans-serif;
 
     --fs-h1: 5rem;
-    --fs-h2: clamp(2.25rem, 2.25rem + 0.25vw, 2.5rem);
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+    /* --fs-h2: clamp(2.25rem, 2.25rem + 0.25vw, 2.5rem);
     --fs-h3: clamp(1.5rem, 1.75rem + 0.25vw, 2rem);
-    --fs-body: clamp(1rem, 1rem + 0.25vw, 1.15rem);
+    --fs-body: clamp(1rem, 1rem + 0.25vw, 1.15rem); */
     --fs-btn: 1rem;
     --icon-size: 2.5rem;
 
@@ -34,6 +37,9 @@
 @media screen and (min-width: 800px) {
     :root {
         --icon-size: 3rem;
+        --fs-h2: 2.5rem;
+        --fs-h3: 2rem;
+        --fs-body: 1.15rem;
     }
 }
 h1 {
@@ -522,7 +528,8 @@ footer a:hover {
 }
 .banner {
     position: relative;
-    min-height: clamp(16rem, 16rem + 5vw, 25rem);
+    /* min-height: clamp(16rem, 16rem + 5vw, 25rem); */
+    min-height: 16rem;
     display: grid;
     place-items: center;
 }
@@ -584,6 +591,9 @@ picture {
 }
 
 @media screen and (min-width: 800px) {
+    .banner {
+        min-height: 25rem;
+    }
     .goal-list {
         grid-template-columns: repeat(3, 1fr);
     }
